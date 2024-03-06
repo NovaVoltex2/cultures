@@ -1,0 +1,128 @@
+.hero-section {
+  position: relative;
+  top: 0;
+    height:70vh ;
+    align-items: center;
+    background: rgb(102,204,255);
+    background: var(--background-gradient);
+    z-index: 1;
+    }
+  
+    .hero-section .container h1, .container h2{
+      color: var(--neutral-color);
+    }
+    .hero-section .container h1{
+      font-size: 80px;
+      line-height: 5rem;
+      font-weight: 800;
+    }
+  
+    .hero-section .container h2{
+      font-size: 30px;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+  
+    .hero-section .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 3rem 0;
+    }
+    .col2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .col1{
+      width: 50vw;
+    }
+    .swiper-slide img{
+      border: 7px solid rgba(255, 255, 255, 0.35);
+      border-radius: 32px;
+      height: 380px;
+      width: 230px;
+      object-fit: cover;
+    }
+    .swiper{
+      height: 400px;
+      width: 50vw;
+    }
+  
+    .learn-more{
+      border-radius: 1rem;
+      padding: 0.8rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      color: var(--neutral-color);
+      border: none;
+      font-size: 14px;
+      background-color: var(--primary-color-dark);
+      
+    }
+    .learn-more:hover{
+      background-color:var(--button-hover) ;
+    }
+
+    @media screen and (max-width: 767px) {
+      .hero-section .container{
+        display: block;
+        overflow: hidden;
+        background: var(--background-gradient);
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        
+      }
+      .hero-section .container h1{
+        font-size: 60px;
+        line-height: 4rem;
+        font-weight: 800;
+      }
+      .hero-section .container h2{
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+    
+      .hero-section {
+        position: relative;
+        top: 0;
+          height:70vh ;
+          align-items: center;
+          z-index: 1;
+          }
+          .swiper{
+            height: 400px;
+            width: 90vw;
+          }
+          .col1{
+            display: block;
+            width: 100%;
+          }
+          .col1 button{
+            margin-bottom: 1rem;
+          }
+    }
+    @media screen and (max-width: 937px) {
+      .hero-section .container{
+        display: block;
+        overflow: hidden;
+        background: var(--background-gradient);
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        
+      }
+      .swiper{
+        height: 400px;
+        width: 90vw;
+        margin-top: 2rem;
+      }
+      .col1{
+        display: block;
+        width: 100%;
+      }
+    }

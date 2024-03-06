@@ -1,0 +1,128 @@
+/* LandingPage.css */
+
+.landing-page {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    }
+  
+  .about-section,
+  .blog-section,
+  .community-section {
+    margin-bottom: 5px;
+    gap: 1rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+  }
+  .about-section h1{
+    color: var(--primary-color-dark);
+  }
+
+  .about-section {
+    align-items: center;
+  }
+  .cultureImgs{
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+  .landing-page h2{
+    margin-bottom: 1rem;
+  }
+  .landing-page h3 {
+    color: var(--primary-color-dark);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+.ytvids{
+  gap: 1rem;
+  justify-content: center;
+}
+  .blog-post {
+   background-color: var(--primary-color-dark);
+   color: var(--neutral-color);
+   padding: 0.5rem 1rem;
+   border-radius: 10px;
+  }
+  .blog-post h4{
+    color: var(--neutral-color);
+  }
+  
+  h4 {
+    color: var(--primary-color-dark);
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: var(--primary-color-dark); /* Use a color that matches your design */
+    color: #fff; /* Text color should contrast with the background color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  
+  button:hover {
+    background-color: var(--button-hover); /* Change the color on hover for interactivity */
+  }
+  
+  .community-section img{
+    width: 300px;
+    height: 200px;
+    
+  }
+
+  @media screen and (max-width: 1154px) {
+    .ytvids {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+      
+    }
+    .ytvids iframe{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+  }
+
+  @media screen and (max-width: 767px) {
+    .landing-page {
+      max-width: 100%;
+      margin-top: 40vh;
+      padding: 20px;
+      }
+      .about-section,
+      .blog-section,
+      .community-section {
+        display: block;
+        
+      }
+      .about-section img{
+        margin: 1rem 30%;
+      }
+  }
+ 

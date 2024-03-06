@@ -1,0 +1,14 @@
+.col-2{
+    display: block;
+    gap: 1rem;
+    align-items: center;
+    
+}
+.col-2 p{
+    text-align:justify;
+    margin-bottom: 1rem;
+}
+
+.TribeOverview{
+    text-align: justify;
+}
