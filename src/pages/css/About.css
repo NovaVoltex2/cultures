@@ -1,174 +1,131 @@
-.about-container{
+.about-section{
     width: 100%;
-    /* background: var(--background-gradient); */
-    background-size: cover;
-   font-size: inherit;
+    min-height: 100vh;
 }
-.row{
-    padding: 3rem;
-    color: var(--primary-color-dark);
-    text-align: center;
-    align-items: center;
-    
+.about-section .about{
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 3rem;
 }
-.row h1{
-    padding-top: 2rem;
+.about-section .about h2{
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    opacity: .7;
+    margin-bottom: 2rem;
 }
-.about-container p{
-    margin-top: 1.5rem;
-    padding: O.5rem;
-    font-size: 20px;
-    /* font-weight: 500; */
-}
-
-.our-team{
-    text-align: center;
-}
-.hero nav{
+.developer-text{
+    width: 85%;
+    min-height: 100vh;
+    margin: 0 auto;
+    /* background-color: pink; */
     display: flex;
-    justify-content: space-around;
-    gap: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-   
+    gap: 2rem;
 }
-.hero .paragraphs h2{
-margin-top: 3rem;
-text-align: center;
-margin-bottom: 2rem;
-}
-
-.paragraph p{
-    text-align: start;
-    background-color: var(--primary-color-dark);
-    padding: 1rem;
-    color: white;
-    border-radius: 10px;
-}
-.about-container h3:after{
-    content: '';
-    display: block;
-    background: #333;
-    height: 3px;
-    width: 150px;
-    margin: 10px auto;
-}
-.slide-container{
-    max-width: 100%;
+.developer-text .developers{
     width: 100%;
-    
-}
-.slide-content{
-    margin: 0 40px;
-}
-.card-wrapper{
-    overflow: hidden;
-}
-.card-image{
-    position: relative;
-    height: 150px;
-    width: 150px;
-    margin-top: 2rem;
-    border-radius: 50%;
-    border: 4px solid white;
-}
-.card-image .card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.about-container .card{
-    width: 320px;
-    border-radius: 25px;
-    background-color: #fff;
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-
-}
-.image-content,
-.card-content{
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 10px 14px;
-}
-.image-content{
-    position: relative;
-    row-gap: 5px;
-    border-radius: 25px 25px 0 25px;
-    padding: 25px 0;
-}
-.overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--primary-color-dark);
-    border-radius: 25px 25px 0 25px;
-}
-.overlay::before,
-.overlay::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: var(--primary-color-dark);
-}
-.overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color: #FFF;
-}
-.name{
-    color: #333;
-    font-size: 18px;
-    font-weight: 500;
-}
-.description{
-    font-size: 14px;
-    color: #707070;
-    text-align: center;
-} 
-
-.about-card{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.about-card .swiper{
-    width: 300px;
-}
-@media screen and (max-width: 600px) {
-    nav{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        display: grid;
-        padding: 10px;
-        grid-template-columns: repeat(auto-fit, mimax(250px, 1fr));
-    }
-    .card{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, mimax(250px, 1fr));
-    }
-    
-}
-
-@media screen and (max-width: 1025px) {
-.about-card{
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: .8rem;
+    flex: 1;
+    margin-bottom: 8rem;
+    margin-top: 5rem;
 }
+.developer-text .developers .first-group, .developer-text .developers .second-group{
+    padding: .2rem .3rem;
+    height: 100%;
 }
-@media screen and (max-width: 724px) {
-    .about-card{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+.developer-text .developers .first-group{
+    margin-top: 6rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: .7rem;
+}
+.developer-text .developers .first-group div:first-of-type{
+    background-image: url(../../components/images/aboutImgs/elvis.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.developer-text .developers .first-group div:last-of-type{
+    background-image: url(../../components/images/aboutImgs/pic-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.developer-text .developers .first-group div{
+     border-radius: 20px;
+}
+.developer-text .developers .second-group{
+    margin-bottom: 6rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: .7rem;
+    overflow: hidden;
+}
+.developer-text .developers .second-group div:first-of-type{
+    background-image: url(../../components/images/aboutImgs/pic-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.developer-text .developers .second-group div:last-of-type{
+    background-image: url(../../components/images/aboutImgs/pic-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.developer-text .developers .second-group div{
+    border-radius: 20px;
+}
+
+/* about text */
+.about-text{
+    flex: 1;
+}
+.about-text h3{
+    font-size: clamp(1.3rem, 10vw, 1.9rem);
+    opacity: .7;
+}
+.about-text p{
+    font-size: clamp(.9rem, 10vw, 18px);
+    margin-top: 1rem;
+    line-height: 35px;
+    opacity: .7;
+}
+
+/* media quesries */
+@media (max-width: 1049px){
+    .developer-text{
+        width: 100%;
     }
+}
+
+@media (max-width: 810px){
+    .about{
+        width: 100%;
     }
+    .developer-text{
+        flex-direction: column-reverse;
+    }
+    .developer-text .developers .first-group{
+        margin-top: 0;
+    }
+    .about-section .about h2{
+        text-align: center;
+    }
+    .about-text h3{
+    text-align: center;
+    margin-bottom: 1rem;
+    }
+    .about-text h3{
+        text-align: center;
+    }
+
+}
+
+@media(max-width:414px){
+    .developer-text .developers{
+        grid-template-columns: 1fr;
+    }
+}
