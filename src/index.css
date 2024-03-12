@@ -13,14 +13,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    /* background-color: var(--neutral-color); */
-    /* background-image: url("../src/components/images/culture\ wallpaper.jpg"); */
-    background-size: cover;
+font-family: 'Poppins', sans-serif;
    min-height: 100vh;
+   overflow-x: hidden;
   }
 
 a{

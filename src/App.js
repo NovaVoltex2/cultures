@@ -1,9 +1,8 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { Home, About, Cultures, Blog } from './pages/All';
-import { Header,Footer } from './components/All';
-import SelectedTribeContent from './components/SelectedTribeContent';
-
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { Home, About, Cultures, Blog } from "./pages/All";
+import { Header, Footer } from "./components/All";
+import SelectedTribeContent from "./components/SelectedTribeContent";
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
         <Route path="/cultures/:tribe" element={<SelectedTribeContent />} />
         {/* You can also add a default "404 Not Found" route if needed */}
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 }
