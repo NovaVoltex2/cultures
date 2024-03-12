@@ -1,12 +1,12 @@
 import React from 'react'
 import "./css/Footer.css"
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+//import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-content">
+      {/*<div className="footer-content">*/}
         <div className="footer-section">
           <h3>Pages</h3>
           <Link to="/cultures" className='footer-nav'>Explore Cultures</Link>
@@ -19,9 +19,8 @@ const Footer = () => {
           <p>Email : luciayen88@gmail.com</p>
           <p>Phone : +521 635455887</p>
         </div>
-        <div className="footer-section">
           <h3>Follow Us</h3>
-          <div className="social-icons">
+          {/*<div className="social-icons">*/}
             {/* Add your social media icons here */}
             <a href="#" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook-f"></i>
@@ -32,7 +31,7 @@ const Footer = () => {
             <a href="#" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
-    <footer>
+    {/*<footer>*/}
       <div className="wrapper">
         <div className="infos">
           <div>
@@ -62,9 +61,9 @@ const Footer = () => {
           <div>
             <h3>Followe us</h3>
             <div className="socails">
-              <FaFacebook className="fb" />
+              {/*<FaFacebook className="fb" />
               <FaTwitter className="tw" />
-              <FaInstagram className="ig" />
+              <FaInstagram className="ig" />*/}
             </div>
           </div>
         </div>
@@ -87,7 +86,7 @@ const Footer = () => {
         <p >2024 Authemtic culture. All right reserved</p>
       </div>
     </footer>
-  );
+  )
 }
 
 export default Footer
