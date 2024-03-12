@@ -7,12 +7,33 @@
     background: var(--neutral-color);
     /* font-family: Arial, sans-serif; */
   }
+  h3{
+	text-align: center;
+	position: relative;
+  }
+
   
   /* Tribe Cards */
   .tribe-cards {
     display: flex;
     gap: 30px;
     text-align: center;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 30%;
+	overflow-y: auto;
+	
+	/*padding-top: 100px;*/
+  }
+
+  @media screen and (max-width:800px) {
+	  .tribe-cards {
+	height: 100%;
+	padding-top: 100px;
+	padding-bottom: 15px;
+  }
+  
   }
   
   .tribe-card {
@@ -40,15 +61,16 @@
   /* Content Section */
   .content {
     display: flex;
-    gap: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    height: 80vh;
-    margin:9% auto;
+   height: 100dvh;
+   padding-top: 4%;
   }
   
+  .subtitle{
+	font-weight: 700;
+  }
+  .tc{
+	text-align: center;
+  }
   .sidebar {
     flex: 1;
     background-color: var(--primary-color-dark);
@@ -80,6 +102,25 @@
     padding: 20px;
     overflow: scroll;
   }
+  .intro,.conclusion{
+	text-align: justify;
+	margin: 25px 0;
+	word-spacing: 1px;
+  }
+  .points{
+	text-align: start;
+  }
+  .points ol {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	line-height: 30px;
+	padding-left: 20px;
+  }
+  .details{
+	text-align:start;
+
+  }
   
   .topic-content-firt-p{
     padding-top: 1rem;
@@ -104,11 +145,27 @@
     background-color: #007bff;
     color: #fff;
   }
+  .ytvids{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0;
+  }
+  .p1 h4,.p2 h4,.p3 h4{
+	font-size: 18px;
+  }
+  .p1 ,.p2 ,.p3{
+	padding: 10px 0;
+	text-align: justify;
+  }
   
   /* Responsive styles */
   @media (max-width: 768px) {
     .content {
       flex-direction: column;
+	  overflow-y: auto;
+	   width: 100%;
+		padding-top: 20%;
     }
+
   }
   

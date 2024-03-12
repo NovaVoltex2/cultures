@@ -1,4 +1,4 @@
-
+import "./bakweri.css"
 import React from 'react'
 
 const FestivalsBakweri = () => {

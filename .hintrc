@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "apple-touch-icons": "off",
+    "compat-api/html": "off"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 118",
+    "not firefox <= 117",
+    "not ios_saf <= 14.8",
+    "not opera <= 102",
+    "not safari <= 14.1"
+  ]
+}

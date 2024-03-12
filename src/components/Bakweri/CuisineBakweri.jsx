@@ -1,5 +1,5 @@
 
-
+import "./bakweri.css"
 import React from 'react'
 import CuisineBak from '../images/Cuisinebakweri.jpg'
 
@@ -19,7 +19,11 @@ const CuisineBakweri = () => {
 <br></br><b>Masephu:</b> A simple plant found in most peoples yards. the leaves are washed and the juice squeezed out of them using water. It is used for simple stomach aches. Also included in the concoction of other leaves, plants and barks of trees that are steamed and used for "li-tumba"(a person suffering from malaria is sat infront of this steaming pot underneath a cover ) and allowed to sweat off the fever . when the water cools down in it then used as an enema as well. It is also said that having this plant in the compound drives away evil spirits.
 <br></br><b>Mbongo:</b> Seeds obtained from a plant of the same species as alligator pepper.The bakweri will ground or even chew it, and mix it in "manyanga"(palm kernel oil). it is the applied all over the body of a child with a high fever to prevent convulsions. It is also the main spice in "mbongo-chobi" dish of the Bassa of Cameroon.
     </p>
-    <img src={CuisineBak} alt=""/>
+			  <div className="wrapper">
+				  <div className='image-container'>
+					  <img src={CuisineBak} alt="" className='BakweriAttire' />
+				  </div>
+			  </div>
     </div>
     </>
   )

@@ -4,4 +4,4 @@ import Cultures from './Cultures'
 import Blog from './Blog'
 
 
-export {Home, About, Cultures, Blog}
+export { Home, About, Cultures, Blog }

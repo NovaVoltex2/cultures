@@ -4,12 +4,12 @@ import LandingPage from '../components/LandingPage'
 
 
 const Home = () => {
-  return (
-    <>
-    <Hero/>
-    <LandingPage/>
-    </>
-  )
+	return (
+		<>
+			<Hero />
+			<LandingPage />
+		</>
+	)
 }
 
 export default Home

@@ -21,12 +21,14 @@
 
   .about-section {
     align-items: center;
+	justify-content: center;
   }
   .cultureImgs{
     padding: 1rem;
     width: 100%;
     align-items: center;
     justify-content: center;
+	overflow: auto;
 }
   .landing-page h2{
     margin-bottom: 1rem;
@@ -118,7 +120,8 @@
       .about-section,
       .blog-section,
       .community-section {
-        display: block;
+        display: flex;
+		flex-direction: column;
         
       }
       .about-section img{

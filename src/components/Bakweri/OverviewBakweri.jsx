@@ -1,4 +1,5 @@
 import React from 'react'
+import "./bakweri.css"
 
 const OverviewBakweri = () => {
   return (
